@@ -1,13 +1,8 @@
 
-module ChuckNorrisHelper
+module BruceSchneierHelper
   
-  def ChuckNorrisHelper::load_random_fact(current_language)
-    lang = current_language.to_s.downcase;
-    if lang == "es"
-      facts = ChuckNorrisFact.find(:all, :conditions => {:lang => lang})
-    else
-      facts = ChuckNorrisFact.find(:all, :conditions => {:lang => "en"})
-    end
+  def BruceSchneierHelper::load_random_fact(current_language)
+    facts = BruceSchneierFact.find(:all, :conditions => {:lang => "en"})
     numberOfFacts = facts.length  
     return facts.at(rand(numberOfFacts))
   end

@@ -1,5 +1,5 @@
 # Encoding: UTF-8
-# Written by: Signo-Net
+# Written by: Signo-Net, Modified by Daniel Gagnon ( moi@danielgagnon.info )
 # Email: clientes@signo-net.com 
 # Web: http://www.signo-net.com 
 
@@ -9,7 +9,7 @@
 # This means you may use it for any purpose, and make any changes you like.
 # All we ask is that you include a link back to our page in your credits.
 
-# Looking forward your comments and suggestions! clientes@signo-net.com
+
 
 require_dependency "projects_controller"
 
@@ -26,7 +26,7 @@ module ProjectControllerPatch
   end
   
   module InstanceMethods
-    include ChuckNorrisHelper
+    include BruceSchneierHelper
     
     def show_with_chuck
   	  show_without_chuck

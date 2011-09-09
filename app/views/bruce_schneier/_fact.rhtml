@@ -1,6 +1,6 @@
 <%
 # Encoding: UTF-8
-# Written by: Signo-Net
+# Written by: Signo-Net, Modified by Daniel Gagnon ( moi@danielgagnon.info )
 # Email: clientes@signo-net.com 
 # Web: http://www.signo-net.com 
 
@@ -10,21 +10,21 @@
 # This means you may use it for any purpose, and make any changes you like.
 # All we ask is that you include a link back to our page in your credits.
 
-# Looking forward your comments and suggestions! clientes@signo-net.com
+
 %>
 <% content_for :header_tags do %>
-    <%= stylesheet_link_tag 'styles', :plugin => 'redmine_chuck_norris' %>
+    <%= stylesheet_link_tag 'styles', :plugin => 'redmine_bruce_schneier' %>
 <% end %>
 
-<h3>Chuck Norris Fact</h3>
+<h3>Bruce Schneier Fact</h3>
 <div id="factWrapper">
 	<em id="fact">
-		<% fact = ChuckNorrisHelper::load_random_fact(current_language) %>
+		<% fact = BruceSchneierHelper::load_random_fact(current_language) %>
 		<%= (fact != nil)?(fact.description):l(:fact_not_found) %>
 	</em>
 	<%= link_to_remote l(:next_fact), 
-	                   { :url => { :controller => 'chuck_norris', :action => 'next_fact', :project_id => @project },
+	                   { :url => { :controller => 'bruce_schneier', :action => 'next_fact', :project_id => @project },
 	                     :method => :post,
-	                     :update => 'chuckNorrisFact'					 
+	                     :update => 'bruceSchneierFact'					 
 	                   }, :class => 'nextFact' %>
 </div>

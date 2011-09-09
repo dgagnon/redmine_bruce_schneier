@@ -1,5 +1,5 @@
 # Encoding: UTF-8
-#	Written by: Signo-Net
+#	Written by: Signo-Net, Modified by Daniel Gagnon ( moi@danielgagnon.info )
 #	Email: clientes@signo-net.com 
 #	Web: http://www.signo-net.com 
 
@@ -9,17 +9,17 @@
 # This means you may use it for any purpose, and make any changes you like.
 # All we ask is that you include a link back to our page in your credits.
 
-# Looking forward your comments and suggestions! clientes@signo-net.com
+
 
 require 'redmine'
-require 'project_chuck_norris_patch'
+require 'project_bruce_schneier_patch'
 
-Redmine::Plugin.register :redmine_chuck_norris do
-  name 'Redmine Chuck Norris plugin'
-  author 'Signo-Net'
-  description 'This plugin modifies the Project overview tab showing a random Chuck Norris fact. Chuck will also approve the project if more than 50% issues are closed.'
-  version '0.0.5'
-  url 'http://www.signo-net.com'
-  author_url 'http://www.signo-net.com'
+Redmine::Plugin.register :redmine_bruce_schneier do
+  name 'Redmine Bruce Schneier plugin'
+  author 'Daniel Gagnon'
+  description 'This plugin modifies the Project overview tab showing a random Bruce Schneier fact. Bruce will also approve the project if more than 50% issues are closed.'
+  version '0.0.1'
+  url 'https://github.com/dgagnon/redmine_bruce_schneier'
+  author_url 'https://github.com/dgagnon/'
   requires_redmine :version_or_higher => '1.0.0'
 end
