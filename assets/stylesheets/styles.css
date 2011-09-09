@@ -14,17 +14,17 @@ div#factWrapper {
 		outline: none;
 	}
 
-div.chuck_ok {
-	background: url('../images/chuck_ok.gif') 100% 100% no-repeat;
+div.bruce_ok {
+	background: url('../images/bruce_ok.png') 100% 100% no-repeat;
 	min-height: 600px;
 }
 
-div.chuck_nok {
-	background: url('../images/chuck_nok.gif') 100% 100% no-repeat;
+div.bruce_nok {
+	background: url('../images/bruce_nok.png') 100% 100% no-repeat;
 	min-height: 600px;
 }
 
-div.chuck_ok div.members, 
-div.chuck_nok div.members {
+div.bruce_ok div.members, 
+div.bruce_nok div.members {
 	margin-bottom: 250px;
 }

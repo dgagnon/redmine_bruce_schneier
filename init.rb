@@ -18,7 +18,7 @@ Redmine::Plugin.register :redmine_bruce_schneier do
   name 'Redmine Bruce Schneier plugin'
   author 'Daniel Gagnon'
   description 'This plugin modifies the Project overview tab showing a random Bruce Schneier fact. Bruce will also approve the project if more than 50% issues are closed.'
-  version '0.0.1'
+  version '0.0.2'
   url 'https://github.com/dgagnon/redmine_bruce_schneier'
   author_url 'https://github.com/dgagnon/'
   requires_redmine :version_or_higher => '1.0.0'

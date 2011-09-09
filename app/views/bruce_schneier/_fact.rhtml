@@ -19,7 +19,7 @@
 <h3>Bruce Schneier Fact</h3>
 <div id="factWrapper">
 	<em id="fact">
-		<% fact = BruceSchneierHelper::load_random_fact(current_language) %>
+		<% fact = BruceSchneierHelper::load_random_fact() %>
 		<%= (fact != nil)?(fact.description):l(:fact_not_found) %>
 	</em>
 	<%= link_to_remote l(:next_fact), 
